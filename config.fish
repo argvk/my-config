@@ -12,4 +12,6 @@ end
 alias cat=bat
 direnv hook fish | source
 
-. ~/.config/fish/local.fish
+if test -f ~/.config/fish/local.fish
+    . ~/.config/fish/local.fish
+end
